@@ -1,0 +1,36 @@
+on:
+    push:
+
+jobs:
+    lint:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+              with:
+                  fetch-depth: 0
+                  submodules: recursive
+
+            - uses: CompeyDev/setup-rokit@d49be92bd9502180218c3f43e7988faa945217b0 # v0.1.2
+
+            - name: init submodules
+              run: git submodule update --init --recursive
+
+            - uses: pnpm/action-setup@v4
+              with:
+                  version: 10
+
+            - name: install packages
+              run: pnpm i --ignore-scripts
+
+            - name: run linter
+              run: pnpm run lint
+
+            - name: compile files
+              run: pnpm run compile
+
+            - env:
+                  LUAU_API_KEY: ${{ secrets.LUAU_API_KEY }}
+                  PUBLISH_API_KEY: ${{ secrets.PUBLISH_API_KEY }}
+              name: run tests
+              run: npm t
+              shell: bash

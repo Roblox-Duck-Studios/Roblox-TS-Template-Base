@@ -1,0 +1,5 @@
+[tools]
+rojo = "rojo-rbx/rojo@7.6.1"
+darklua = "seaofvoices/darklua@0.17.2"
+lune = "lune-org/lune@0.10.4"
+asphalt = "jackTabsCode/asphalt@1.2.0"

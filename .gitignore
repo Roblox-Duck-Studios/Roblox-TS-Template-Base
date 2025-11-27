@@ -1,0 +1,15 @@
+node_modules
+
+out
+include
+
+*sourcemap.json
+dist
+
+.env
+
+build.rbxl
+flamework.build
+build.rbxl.lock
+
+services.d.ts

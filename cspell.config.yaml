@@ -1,0 +1,19 @@
+# yaml-language-server:
+# $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json
+
+version: "0.2"
+language: en
+words:
+  - darklua
+  - udim
+  - getfenv
+  - Jabby
+  - cframe
+  - aetheris
+  - regen
+  - cooldown
+  - jecs
+  - cutscene
+  - rbxctl
+  - replecs
+  - scriptable

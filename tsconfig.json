@@ -1,0 +1,40 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"jsx": "react",
+		"jsxFactory": "React.createElement",
+		"jsxFragmentFactory": "React.Fragment",
+		"moduleDetection": "force",
+		"noLib": true,
+		"experimentalDecorators": true,
+		"baseUrl": ".",
+		"rootDirs": ["src", "./common/src"],
+		"module": "commonjs",
+		"moduleResolution": "Node",
+		"paths": {
+			"common/*": ["common/src/*"]
+		},
+		"resolveJsonModule": true,
+		"typeRoots": ["node_modules/@rbxts", "node_modules/@flamework", "./common/src/*"],
+		"strict": true,
+		"downlevelIteration": true,
+		"outDir": "out",
+		// required
+		"allowSyntheticDefaultImports": true,
+		"forceConsistentCasingInFileNames": true,
+		"preserveSymlinks": true,
+		"plugins": [
+			{
+				"transform": "rbxts-transform-debug"
+			},
+			{
+				"transform": "rbxts-transformer-flamework"
+			},
+			{
+				"transform": "rbxts-transform-env"
+			}
+		]
+	},
+	"include": ["**/*", "./common/src/**/*"],
+	"exclude": ["**/*eslint.config.ts", "**/*commitlint.config.ts"]
+}

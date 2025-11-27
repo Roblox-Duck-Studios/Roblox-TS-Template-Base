@@ -1,0 +1,13 @@
+diff --git a/node_modules/@rbxts/types/include/lua.d.ts b/node_modules/@rbxts/types/include/lua.d.ts
+index 5672dff..16023f3 100644
+--- a/node_modules/@rbxts/types/include/lua.d.ts
++++ b/node_modules/@rbxts/types/include/lua.d.ts
+@@ -809,6 +809,8 @@ declare function next<K, V>(object: ReadonlyMap<K, V>, index?: K): LuaTuple<[K,
+ declare function next<T extends object>(object: T, index?: keyof T): LuaTuple<[keyof T, T[keyof T]]>;
+ declare function next(object: object, index?: unknown): LuaTuple<[unknown, unknown]>;
+ 
++declare function unpack(object: object): any; 
++
+ declare function pairs<T>(object: ReadonlyArray<T>): IterableFunction<LuaTuple<[number, Exclude<T, undefined>]>>;
+ declare function pairs<T>(object: ReadonlySet<T>): IterableFunction<LuaTuple<[T, true]>>;
+ declare function pairs<K, V>(

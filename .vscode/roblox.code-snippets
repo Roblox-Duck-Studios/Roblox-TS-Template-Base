@@ -1,0 +1,25 @@
+{
+  "Create React Story": {
+    "prefix": [
+      "story",
+      "react story"
+    ],
+    "body": [
+      "import { RootProvider } from \"common/client/ui/provider/root-provider\";",
+      "import { CreateReactStory } from \"@rbxts/ui-labs\";",
+      "import React, { StrictMode } from \"@rbxts/react\";",
+      "import ReactRoblox from \"@rbxts/react-roblox\";",
+      "",
+      "export = CreateReactStory({ reactRoblox: ReactRoblox, react: React }, () => {",
+      "  return (",
+      "    <StrictMode>",
+      "      <RootProvider>",
+      "        $0",
+      "      </RootProvider>",
+      "    </StrictMode>",
+      "  );",
+      "});"
+    ],
+    "description": "Creates a React story using CreateReactStory and RootProvider"
+  },
+}
