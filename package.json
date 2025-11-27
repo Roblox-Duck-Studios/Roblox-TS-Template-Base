@@ -45,6 +45,7 @@
 		"@isentinel/tsconfig": "catalog:types",
 		"@rbxts/compiler-types": "catalog:types",
 		"@rbxts/types": "catalog:types",
+		"concurrently": "catalog:script",
 		"eslint": "catalog:lint",
 		"eslint-plugin-pnpm": "catalog:lint",
 		"eslint-plugin-react-hooks": "catalog:lint",
