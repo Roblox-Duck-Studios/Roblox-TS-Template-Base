@@ -1,4 +1,4 @@
 [submodule "common"]
 	path = common
 	# Put your common repository here
-	url = https://github.com/Roblox-Duck-Studios/Infinite-Maze-V2-Common
+	url = https://github.com/Roblox-Duck-Studios/Roblox-TS-Template-Base

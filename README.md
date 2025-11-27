@@ -31,3 +31,6 @@ Also update the .gitmodules command
 
 ### Renovate
 This project also prefers using [Renovate](https://docs.renovatebot.com/getting-started/installing-onboarding/) for updating dependencies. Please setup a account and read this documentation to get started with it.
+
+### Repository Secrets
+In your base repository setup `PUBLISH_API_KEY`, `LUAU_API_KEY`, `PAT`, and your common repository setup `PUBLISH_API_KEY`, `LUAU_API_KEY` as action secrets.
